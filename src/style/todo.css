@@ -1,0 +1,168 @@
+body {
+  background-color: #EAE7DC;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+  font-size: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 11rem;
+  width: 18rem;
+  box-shadow: 0 0 2px;
+  background-color: #D8C3A5;
+  border-radius: 5px;
+}
+
+.form__title {
+  text-align: center;
+  width: 100%;
+  margin: 4px;
+}
+
+.form__desc {
+  text-align: center;
+  width: 100%;
+  margin: 4px;
+}
+
+.form__title-input {
+  border: 1px solid #FFB48F;
+  width: 50%;
+}
+
+.form__desc-input {
+  resize: none;
+  width: 80%;
+  height: 3rem;
+}
+
+.form__button {
+  margin-top: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: honeydew;
+}
+
+.validation-message {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  margin-top: 11.7rem;
+  text-align: center;
+  width: 14rem;
+  color: red;
+}
+
+.validation-animation {
+  display: block;
+  animation: fade 1.5s linear;
+}
+
+@keyframes fade {
+  0% {opacity: 1;}
+  100% { opacity: 0;}
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  height: 100%;
+  width: 18rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFB48F;
+  height: 7rem;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 2px black;
+  order: 1;
+}
+
+.card--toggle {
+  background-color: gray;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  order: 2;
+}
+
+.card__title {
+  margin-top: 1px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card__desc {
+  width: 100%;
+  margin: -7px 0;
+  word-wrap: break-word;
+}
+
+.card__button {
+  display: none;
+}
+
+.card__button--toggle {
+  display: block;
+  flex-direction: column;
+  margin-top: auto;
+  width: 4rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+  color: black;
+}
+
+.card__button:hover {
+  cursor: pointer;
+  background-color: honeydew;
+}
+
+.card__completed {
+  display: none;
+}
+
+.card__completed--toggle {
+  display: inline-block;
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 5.5rem;
+  margin-top: 2rem;
+  color: green;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  transform: rotate(-25deg)
+}
+
+input:required:invalid, textarea:required:invalid {
+  border-color: #FFB48F;
+}
+
+input:required:valid, textarea:required:valid {
+  border-color: green;
+}

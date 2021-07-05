@@ -1,0 +1,43 @@
+@media screen and (max-width: 300px) {
+  .form {
+    width: 14rem;
+  }
+
+  .card-container {
+    width: 14rem;
+  }
+
+  .card {
+    height: 8rem;
+  }
+
+  .card__completed--toggle {
+    margin-left: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40rem;
+  }
+  .card {
+    margin: 5px 5px;
+    width: 18rem;
+  }
+
+}
+
+@media screen and (min-width: 1050px) {
+  .card-container {
+    width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .card-container {
+    width: 80rem;
+  }
+}
